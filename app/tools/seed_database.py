@@ -1,9 +1,10 @@
 import random
-from redis import StrictRedis
 from datetime import datetime, timedelta
 
-from app.models import Player
+from redis import StrictRedis
+
 from app.config import REDIS_PORT, REDIS_HOST, REDIS_DB
+from app.models import Player
 
 
 def distribute_players():
